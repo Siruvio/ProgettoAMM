@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Nerdbook: where nerds come to life!</title>
+        <title>NB - Join the nerd side!</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Siruvio">
@@ -24,7 +24,34 @@ and open the template in the editor.
         </nav>
         
         <div>
-            <p>Profilo</p>
+            <h1>Join us!</h1>
+            <div id="formRegister">
+                <form action="servlet.java" method="post">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name">
+                    
+                    <label for="surname">Cognome</label>
+                    <input type="text" name="surname" id="surname">
+                    
+                    <label for="photo">Foto per il profilo</label>
+                    <input type="file" name="photo" id="photo">
+
+                    <label for="presText">Parlaci di te</label>
+                    <textarea name="presText" id="presText" rows="4" cols="25">Possibilmente, in breve</textarea>
+
+                    <label for="bornDate">Data di nascita</label>
+                    <input type="date" name="bornDate" id="bornDate">
+
+                    <label for="pass1">Password</label>
+                    <input type="text" name="pass1" id="pass1">
+
+                    <label for="pass2">Conferma password</label>
+                    <input type="text" name="pass2" id="pass2">
+                    
+                    
+                    <button type="submit">Invio</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>
