@@ -3,11 +3,40 @@
     Author     : Siruvio
 */
 
-
 /* Stile generico principale */
 body {
-    background-color: #4cd1a0;
-    font-size: 18px;
+    background-color: #52c5e8;
+    font: 19px "Avenir", "Arial", sans-serif;
 }
 
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: #202020;
+}
 
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    color: #202020;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: #202020;
+}
+
+a:link, a:visited {
+    font-size: 19px;
+    color: #3200ff;
+    text-decoration: none;
+}
+
+a:hover {
+    font-style: italic;
+    font-weight: bold;
+}

@@ -27,13 +27,21 @@
             <h1>Log in</h1>
             <div id="formLogin">
                 <form action="servlet.java" method="post">
-                    <label for="nomeUtente">Username</label>
-                    <input type="text" name="user" id="nomeUtente">
-                    
-                    <label for="passWord">Password</label>
-                    <input type="password" name="pass" id="passWord">
-                    
-                    <button type="submit">Invio</button>
+                    <div class="formDiv">
+                        <div class="formLabel">
+                            <label for="nomeUtente">Username</label>
+                        </div>
+                        <input type="text" name="user" id="nomeUtente">
+                    </div>
+                    <div class="formDiv">
+                        <div class="formLabel">
+                            <label for="passWord">Password</label>
+                        </div>
+                        <input type="password" name="pass" id="passWord">
+                    </div>
+                    <div>
+                        <button type="submit">Invio</button>
+                    </div>
                 </form>
             </div>
         </div>
