@@ -40,3 +40,102 @@ a:hover {
     font-style: italic;
     font-weight: bold;
 }
+
+/* Headbar style */
+#headBar {
+    background-color: #ff0000;
+}
+
+#headBar #title, #headBar #navBar, #navBar ol, #navBar li, #navBar #logOutBox{
+    display: inline-block;
+    padding-left: 0px;
+}
+
+#title {
+    width: 15.4%;
+}
+
+#title h1 {
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#title h1, #navBar ol{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#navBar li {
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 2px solid #ffffff;
+}
+
+#navBar li:last-child {
+    border-right: 2px solid #ffffff;
+}
+
+#logOutBox {
+    float: right;
+    margin-right: 20px;
+}
+
+#logOutBox p {
+    margin-top: 1px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Sidebar style */
+#sidebarLeft {
+    background-color: #00ff00;
+    float: left;
+    width: 15%;
+    padding-left: 10px;
+}
+
+#sidebarLeft h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#sidebarLeft ul {
+    font-size: 20px;
+    margin-top: 0px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+/* Generic content style */
+#pageContent {
+    background-color: #0000ff;
+    float: left;
+    width: 84%;
+}
+#elements {
+    background-color: #ffff00;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#elements p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.post {
+    background-color: #ff00ff;
+    border-radius: 15px;
+}
+
+.post .postPic {
+    width: 120px;
+    height: 120px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 20px;
+}

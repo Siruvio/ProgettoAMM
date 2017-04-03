@@ -11,69 +11,104 @@
     </head>
     
     <body>
-        <!-- NavBar -->
-        <nav>
-            <ol>
-                <li><a href="bacheca.html" target="bacheca">Bacheca</a></li>
-                <li><a href="descrizione.html" target="domande">Il sito</a></li>
-                <li><a href="login.html" target="fallato">Login</a></li>
-                <li><a href="profilo.html" target="PROsciutto">Profilo personale</a></li>
-            </ol>
-        </nav>
-        
-        <!-- Form di registrazione -->
-        <div> 
-            <h1>Join us!</h1>
-            <div id="formRegister">
-                <form action="servlet.java" method="post">
-                    <div class="formDiv">
-                        <div class="formLabel">
-                            <label for="name">Nome</label>
-                        </div>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div class="formDiv">
-                        <div class="formLabel">
-                            <label for="surname">Cognome</label>
-                        </div>
-                        <input type="text" name="surname" id="surname">
-                    </div>
-                    <div class="formDiv">
-                        <div class="formLabel">
-                            <label for="photo">Foto per il profilo</label>
-                        </div>
-                        <input type="url" name="photo" id="photo">
-                    </div>
-                    <div class="formDiv">
-                        <div class="formLabel">
-                            <label for="presText">Parlaci di te</label>
-                        </div>
-                        <textarea name="presText" id="presText" rows="4" cols="25">Possibilmente, in breve</textarea>
-                    </div>
-                    <div class="formDiv">
-                        <div class="formLabel">
-                            <label for="bornDate">Data di nascita</label>
-                        </div>
-                        <input type="date" name="bornDate" id="bornDate">
-                    </div>
-                    <div class="formDiv">
-                        <div class="formLabel">
-                            <label for="pass1">Password</label>
-                        </div>
-                        <input type="password" name="pass1" id="pass1">
-                    </div>
-                    <div class="formDiv">
-                        <div class="formLabel">
-                            <label for="pass2">Conferma password</label>
-                        </div>
-                        <input type="password" name="pass2" id="pass2">
-                    </div>
-                    <div>
-                        <button type="submit">Invio</button>
-                    </div>
-                </form>
+        <!-- Barra superiore, ossia titolo, navbar e logout -->
+        <div id="headBar">
+            <div id="title">
+                <h1>NERDBOOK</h1>
+            </div>
+            <nav id="navBar">
+                <ol>
+                    <li><a href="bacheca.html" target="bacheca">Bacheca</a></li>
+                    <li><a href="descrizione.html" target="domande">Il sito</a></li>
+                    <li><a href="login.html" target="fallato">Login</a></li>
+                    <li><a href="profilo.html" target="PROsciutto">Profilo personale</a></li>
+                </ol>
+            </nav>
+            <div id="logOutBox">
+                <p>Nome</p>
+                <p>Logout</p>
             </div>
         </div>
         
+        <!-- Barra laterale sinistra -->
+        <div id="sidebarLeft">
+            <div id="searchBox">
+                <p>Box</p>
+            </div>
+            <div id="friendsList">
+                <h2>Friend list</h2>
+                <ul>
+                    <li>Friend1</li>
+                    <li>Friend2</li>
+                    <li>Friend3</li>
+                    <li>Friend4</li>
+                </ul>
+            </div>
+            <div id="groupsList">
+                <h2>Group list</h2>
+                <ul>
+                    <li>Group1</li>
+                    <li>Group2</li>
+                    <li>Group3</li>
+                    <li>Group4</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Form di registrazione -->
+        <div id="pageContent">
+            <div id="elements">
+                <h1>Join us!</h1>
+                <div id="formRegister">
+                    <form action="servlet.java" method="post">
+                        <div class="formDiv">
+                            <div class="formLabel">
+                                <label for="name">Nome</label>
+                            </div>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="formDiv">
+                            <div class="formLabel">
+                                <label for="surname">Cognome</label>
+                            </div>
+                            <input type="text" name="surname" id="surname">
+                        </div>
+                        <div class="formDiv">
+                            <div class="formLabel">
+                                <label for="photo">Foto per il profilo</label>
+                            </div>
+                            <input type="url" name="photo" id="photo">
+                        </div>
+                        <div class="formDiv">
+                            <div class="formLabel">
+                                <label for="presText">Parlaci di te</label>
+                            </div>
+                            <textarea name="presText" id="presText" rows="4" cols="25">Possibilmente, in breve</textarea>
+                        </div>
+                        <div class="formDiv">
+                            <div class="formLabel">
+                                <label for="bornDate">Data di nascita</label>
+                            </div>
+                            <input type="date" name="bornDate" id="bornDate">
+                        </div>
+                        <div class="formDiv">
+                            <div class="formLabel">
+                                <label for="pass1">Password</label>
+                            </div>
+                            <input type="password" name="pass1" id="pass1">
+                        </div>
+                        <div class="formDiv">
+                            <div class="formLabel">
+                                <label for="pass2">Conferma password</label>
+                            </div>
+                            <input type="password" name="pass2" id="pass2">
+                        </div>
+                        <div>
+                            <button type="submit">Invio</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

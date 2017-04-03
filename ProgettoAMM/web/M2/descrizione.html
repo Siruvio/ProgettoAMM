@@ -12,62 +12,98 @@
     </head>
     
     <body>
-        <!-- NavBar -->
-        <nav>
-            <ol>
-                <li><a href="bacheca.html" target="bacheca">Bacheca</a></li>
-                <li><a href="descrizione.html" target="domande">Il sito</a></li>
-                <li><a href="login.html" target="fallato">Login</a></li>
-                <li><a href="profilo.html" target="PROsciutto">Profilo personale</a></li>
-            </ol>
-        </nav>
+        <!-- Barra superiore, ossia titolo, navbar e logout -->
+        <div id="headBar">
+            <div id="title">
+                <h1>NERDBOOK</h1>
+            </div>
+            <nav id="navBar">
+                <ol>
+                    <li><a href="bacheca.html" target="bacheca">Bacheca</a></li>
+                    <li><a href="descrizione.html" target="domande">Il sito</a></li>
+                    <li><a href="login.html" target="fallato">Login</a></li>
+                    <li><a href="profilo.html" target="PROsciutto">Profilo personale</a></li>
+                </ol>
+            </nav>
+            <div id="logOutBox">
+                <p>Nome</p>
+                <p>Logout</p>
+            </div>
+        </div>
+        
+        <!-- Barra laterale sinistra -->
+        <div id="sidebarLeft">
+            <div id="searchBox">
+                <p>Box</p>
+            </div>
+            <div id="friendsList">
+                <h2>Friend list</h2>
+                <ul>
+                    <li>Friend1</li>
+                    <li>Friend2</li>
+                    <li>Friend3</li>
+                    <li>Friend4</li>
+                </ul>
+            </div>
+            <div id="groupsList">
+                <h2>Group list</h2>
+                <ul>
+                    <li>Group1</li>
+                    <li>Group2</li>
+                    <li>Group3</li>
+                    <li>Group4</li>
+                </ul>
+            </div>
+        </div>
         
         <!-- Descrizione -->
-        <div>
-            <h1>NERDBOOK - Where nerds come to life!</h1>
-            <p>Bene. Qui dovrebbe esserci una descrizione. Ma non so che scrivere. Mh...</p>
-            <p>E se mettessi semplicemente un FAQ?</p>
-            <p>Ma si!</p>
-            
-            <!-- Sommario domande -->
-            <h2>FAQ - Fenomenali Arance Quadrate</h2>
-            <ol>
-                <li><a href="#domanda1">Iscrizione</a></li>
-                <li><a href="#domanda2">Anonimità</a></li>
-                <li><a href="#domanda3">Gratuità</a></li>
-                <li><a href="#domanda4">Limiti</a></li>
-                <li><a href="#domanda5">..?</a></li>
-            </ol>
-            
-            <!-- Div con le singole domande -->
-            <div id="domanda1">
-                <h3>Come mi posso iscrivere?</h3>
-                <p>Beh, stiamo lavorando ad un form di login/iscrizione. Il problema è che ad ora non va :3</p>
+        <div id="pageContent">
+            <div id="elements">
+                <h1>NERDBOOK - Where nerds come to life!</h1>
+                <p>Bene. Qui dovrebbe esserci una descrizione. Ma non so che scrivere. Mh...</p>
+                <p>E se mettessi semplicemente un FAQ?</p>
+                <p>Ma si!</p>
+
+                <!-- Sommario domande -->
+                <h2>FAQ - Fenomenali Arance Quadrate</h2>
+                <ol>
+                    <li><a href="#domanda1">Iscrizione</a></li>
+                    <li><a href="#domanda2">Anonimità</a></li>
+                    <li><a href="#domanda3">Gratuità</a></li>
+                    <li><a href="#domanda4">Limiti</a></li>
+                    <li><a href="#domanda5">..?</a></li>
+                </ol>
+
+                <!-- Div con le singole domande -->
+                <div id="domanda1">
+                    <h3>Come mi posso iscrivere?</h3>
+                    <p>Beh, stiamo lavorando ad un form di login/iscrizione. Il problema è che ad ora non va :3</p>
+                </div>
+                <div id="domanda2">
+                    <h3>E' garantita l'anonimità?</h3>
+                    <p>No, è un social network! Scherzi a parte, la crittografia è ancora in lavorazione. Come le iscrizioni</p>
+                </div>
+                <div id="domanda3">
+                    <h3>Almeno è gratis?</h3>
+                    <p>Quello sì. Ma le donazioni sono sempre gradite :D</p>
+                </div>
+
+                <div id="domanda4">
+                    <h3>C'è un limite al numero di gatti che posso conoscere?</h3>
+                    <p>...quello è GatTeender. Social sbagliato. In compenso no, non esiste un limite di persone che puoi conoscere. O meglio, dipende da quanti si iscrivono. Il numero è comunque limitato.</p>
+                </div>
+                <div id="domanda5">
+                    <h3>ILLIMITATO LAMA LAVORO!</h3>
+                    <p>...cosa?</p>
+                    //Come detto nell'index, non è colpa mia
+                </div>
+                <!--
+                <div id="domanda">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                -->
             </div>
-            <div id="domanda2">
-                <h3>E' garantita l'anonimità?</h3>
-                <p>No, è un social network! Scherzi a parte, la crittografia è ancora in lavorazione. Come le iscrizioni</p>
-            </div>
-            <div id="domanda3">
-                <h3>Almeno è gratis?</h3>
-                <p>Quello sì. Ma le donazioni sono sempre gradite :D</p>
-            </div>
-            
-            <div id="domanda4">
-                <h3>C'è un limite al numero di gatti che posso conoscere?</h3>
-                <p>...quello è GatTeender. Social sbagliato. In compenso no, non esiste un limite di persone che puoi conoscere. O meglio, dipende da quanti si iscrivono. Il numero è comunque limitato.</p>
-            </div>
-            <div id="domanda5">
-                <h3>ILLIMITATO LAMA LAVORO!</h3>
-                <p>...cosa?</p>
-                //Come detto nell'index, non è colpa mia
-            </div>
-            <!--
-            <div id="domanda">
-                <h3></h3>
-                <p></p>
-            </div>
-            -->
         </div>
     </body>
 </html>
