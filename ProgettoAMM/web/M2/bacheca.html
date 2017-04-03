@@ -11,12 +11,12 @@
     </head>
     
     <body>
-        <!-- NavBar -->
-        <div id="navBar">
-            <div id="titolo">
+        <!-- Barra superiore, ossia titolo, navbar e logout -->
+        <div id="headBar">
+            <div id="title">
                 <h1>NERDBOOK</h1>
             </div>
-            <nav id="barraNavig">
+            <nav id="navBar">
                 <ol>
                     <li><a href="bacheca.html" target="bacheca">Bacheca</a></li>
                     <li><a href="descrizione.html" target="domande">Il sito</a></li>
@@ -24,41 +24,81 @@
                     <li><a href="profilo.html" target="PROsciutto">Profilo personale</a></li>
                 </ol>
             </nav>
+            <div id="logOutBox">
+                <p>Nome</p>
+                <p>Logout</p>
+            </div>
         </div>
-        <!-- Ogni div ha un post -->
-        <div>
-            <div>
-                <img alt="Foto profilo" src="../img/profilo2.jpg">
-                <h2>Paulo</h2>
-                <p>Era <a href="http://naruto.italia.forumfree.it/?t=69949522" target="_blank">questo</a> che cercavate?</p>
+        
+        <!-- Barra laterale sinistra -->
+        <div id="sidebarLeft">
+            <div id="searchBox">
+                <p>Box</p>
             </div>
+            <div id="friendsList">
+                <h2>Friend list</h2>
+                <ul>
+                    <li>Friend1</li>
+                    <li>Friend2</li>
+                    <li>Friend3</li>
+                    <li>Friend4</li>
+                </ul>
+            </div>
+            <div id="groupsList">
+                <h2>Group list</h2>
+                <ul>
+                    <li>Group1</li>
+                    <li>Group2</li>
+                    <li>Group3</li>
+                    <li>Group4</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Centro della pagina, con i singoli post -->
+        <div id="pageContent">
+            <div id="elements">
+                <div class="post">
+                    <img class="postPic" alt="Foto profilo" src="../img/profilo2.jpg">
+                    <div>
+                        <h2>Paulo</h2>
+                    </div>
+                    <p>Era <a href="http://naruto.italia.forumfree.it/?t=69949522" target="_blank">questo</a> che cercavate?</p>
+                </div>
             
-            <div>
-                <img alt="Foto profilo" src="../img/profilo3.jpg">
-                <h2>Lorai</h2>
-                <p>Yap</p>
-            </div>
+                <div class="post">
+                    <img class="postPic" alt="Foto profilo" src="../img/profilo3.jpg">
+                    <div>
+                        <h2>Lorai</h2>
+                    </div>
+                    <p>Yap</p>
+                </div>
             
-            <div>
-                <img alt="Foto profilo" src="../img/profilo3.jpg">
-                <h2>Lorai</h2>
-                <p>Ah, Siruvio</p>
-                <img alt="Allegato" src="../img/post1.png">
-            </div>
+                <div class="post">
+                    <img class="postPic" alt="Foto profilo" src="../img/profilo3.jpg">
+                    <div>
+                        <h2>Lorai</h2>
+                    </div>
+                    <p>Ah, Siruvio</p>
+                    <img alt="Allegato" src="../img/post1.png">
+                </div>
             
-            <div>
-                <img alt="Foto profilo" src="../img/profilo1.jpg">
-                <h2>Siruvio</h2>
-                <p>Lor, vuoi farti bannare? Da un'alpha? Davvero?</p>
-            </div>
+                <div class="post">
+                    <img class="postPic" alt="Foto profilo" src="../img/profilo1.jpg">
+                    <div>
+                        <h2>Siruvio</h2>
+                    </div>
+                    <p>Lor, vuoi farti bannare? Da un'alpha? Davvero?</p>
+                </div>
 
-            <!--
-            <div>
-                <img alt="Foto profilo" src="">
-                <h2></h2>
-                <p></p>
+                <!--
+                <div class="post">
+                    <img class="postPic" alt="Foto profilo" src="">
+                    <h2></h2>
+                    <p></p>
+                </div>
+                -->
             </div>
-            -->
         </div>
     </body>
 </html>
