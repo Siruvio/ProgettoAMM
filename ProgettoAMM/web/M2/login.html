@@ -12,69 +12,25 @@
     </head>
     
     <body>
-        <!-- Barra superiore, ossia titolo, navbar e logout -->
-        <div id="headBar">
-            <div id="title">
-                <h1>NERDBOOK</h1>
-            </div>
-            <nav id="navBar">
-                <ol>
-                    <li><a href="bacheca.html" target="bacheca">Bacheca</a></li>
-                    <li><a href="descrizione.html" target="domande">Il sito</a></li>
-                    <li><a href="login.html" target="fallato">Login</a></li>
-                    <li><a href="profilo.html" target="PROsciutto">Profilo personale</a></li>
-                </ol>
-            </nav>
-            <div id="logOutBox">
-                <p>Nome</p>
-                <p>Logout</p>
-            </div>
-        </div>
-        
-        <!-- Barra laterale sinistra -->
-        <div id="sidebarLeft">
-            <div id="searchBox">
-                <p>Box</p>
-            </div>
-            <div id="friendsList">
-                <h2>Friend list</h2>
-                <ul>
-                    <li>Friend1</li>
-                    <li>Friend2</li>
-                    <li>Friend3</li>
-                    <li>Friend4</li>
-                </ul>
-            </div>
-            <div id="groupsList">
-                <h2>Group list</h2>
-                <ul>
-                    <li>Group1</li>
-                    <li>Group2</li>
-                    <li>Group3</li>
-                    <li>Group4</li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Form di login -->
-        <div id="pageContent">
+                <!-- Form di login -->
+        <div id="pageLogin">
             <div id="elements">
-                <h1>Log in</h1>
+                <h1>NerdBook</h1>
                 <div id="formLogin">
                     <form action="servlet.java" method="post">
                         <div class="formDiv">
-                            <div class="formLabel">
+                            <div>
                                 <label for="nomeUtente">Username</label>
                             </div>
                             <input type="text" name="user" id="nomeUtente">
                         </div>
                         <div class="formDiv">
-                            <div class="formLabel">
+                            <div>
                                 <label for="passWord">Password</label>
                             </div>
                             <input type="password" name="pass" id="passWord">
                         </div>
-                        <div>
+                        <div class="formDiv">
                             <button type="submit">Invio</button>
                         </div>
                     </form>

@@ -41,7 +41,7 @@ a:hover {
     font-weight: bold;
 }
 
-/* Headbar style */
+/* Stile headbar */
 #headBar {
     background-color: #ff0000;
 }
@@ -90,7 +90,7 @@ a:hover {
     text-align: center;
 }
 
-/* Sidebar style */
+/* Stile sidebar */
 #sidebarLeft {
     background-color: #00ff00;
     float: left;
@@ -110,12 +110,13 @@ a:hover {
     list-style-type: none;
 }
 
-/* Generic content style */
+/* Stile contenuto generico con sidebar */
 #pageContent {
     background-color: #0000ff;
     float: left;
     width: 84%;
 }
+
 #elements {
     background-color: #ffff00;
     margin-left: 5px;
@@ -127,9 +128,17 @@ a:hover {
     margin-bottom: 10px;
 }
 
+/* Stile contenuto generico senza sidebar */
+#pageLogin #elements {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Stile bacheca */
 .post {
     background-color: #ff00ff;
     border-radius: 15px;
+    margin-bottom: 25px;
 }
 
 .post .postPic {
@@ -138,4 +147,45 @@ a:hover {
     margin-top: 5px;
     margin-left: 10px;
     border-radius: 20px;
+}
+
+.post .postName {
+    display: inline-block;
+    position: relative;
+    bottom: 45px;
+    margin-left: 15px;
+}
+
+.post p{
+    margin-left: 15px;
+    position: relative;
+    bottom: 15px;
+}
+.postPhoto {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+/* Stile login */
+#pageLogin h1, #pageLogin #formLogin {
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+#formLogin {
+    background-color: #ff00ff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 400px;
+    border: 2px solid #ffffff;
+}
+
+#formLogin .formDiv {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.formDiv input, .formDiv button {
+    width: 100%
 }
