@@ -96,6 +96,7 @@ a:hover {
     float: left;
     width: 15%;
     padding-left: 10px;
+    margin-top: 5px;
 }
 
 #sidebarLeft h2 {
@@ -112,7 +113,6 @@ a:hover {
 
 /* Stile contenuto generico con sidebar */
 #pageContent {
-    background-color: #0000ff;
     float: left;
     width: 84%;
 }
@@ -188,4 +188,63 @@ a:hover {
 
 .formDiv input, .formDiv button {
     width: 100%
+}
+
+/* Stile login */
+#pageLogin h1, #pageLogin #formLogin {
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+#formLogin {
+    background-color: #ff00ff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 400px;
+    border: 2px solid #ffffff;
+}
+
+#formLogin .formDiv {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.formDiv input, .formDiv button {
+    width: 100%
+}
+
+/* Stile profilo */
+#elements h1 {
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+#formRegister {
+    background-color: #ff00ff;
+    margin-left: 10%;
+    border: 2px solid #ffffff;
+    width: 600px;
+}
+
+#formRegister .formDiv {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 500px;
+}
+
+#formRegister .formDiv:first-of-type {
+    margin-top: 10px;
+}
+
+#formRegister .formLabel, #formRegister .formInput {
+    display: inline-block;
+}
+
+#formRegister .formLabel {
+    width: 200px;
+}
+
+#formRegister .formInput {
+    width: 285px;
 }
