@@ -60,51 +60,72 @@
             <div id="elements">
                 <h1>Join us!</h1>
                 <div id="formRegister">
-                    <form action="servlet.java" method="post">
+                    <form action="" method="post">
                         <div class="formDiv">
                             <div class="formLabel">
                                 <label for="name">Nome</label>
                             </div>
-                            <input type="text" name="name" id="name">
+                            <div class="formInput">
+                                <input type="text" name="name" id="name">
+                            </div>
                         </div>
+                        
                         <div class="formDiv">
                             <div class="formLabel">
                                 <label for="surname">Cognome</label>
                             </div>
-                            <input type="text" name="surname" id="surname">
+                            <div class="formInput">
+                                <input type="text" name="surname" id="surname">
+                            </div>
                         </div>
+                        
                         <div class="formDiv">
                             <div class="formLabel">
                                 <label for="photo">Foto per il profilo</label>
                             </div>
-                            <input type="url" name="photo" id="photo">
+                            <div class="formInput">
+                                <input type="url" name="photo" id="photo">
+                            </div>
                         </div>
+                        
                         <div class="formDiv">
                             <div class="formLabel">
-                                <label for="presText">Parlaci di te</label>
+                                <label for="presText">Frase di presentazione</label>
                             </div>
-                            <textarea name="presText" id="presText" rows="4" cols="25">Possibilmente, in breve</textarea>
+                            <div class="formInput">
+                                <input type="text" name="presText" id="presText">
+                            </div>
                         </div>
+                        
                         <div class="formDiv">
                             <div class="formLabel">
                                 <label for="bornDate">Data di nascita</label>
                             </div>
-                            <input type="date" name="bornDate" id="bornDate">
+                            <div class="formInput">
+                                <input type="date" name="bornDate" id="bornDate">
+                            </div>
                         </div>
+                        
                         <div class="formDiv">
                             <div class="formLabel">
                                 <label for="pass1">Password</label>
                             </div>
-                            <input type="password" name="pass1" id="pass1">
+                            <div class="formInput">
+                                <input type="password" name="pass1" id="pass1">
+                            </div>
                         </div>
+                        
                         <div class="formDiv">
                             <div class="formLabel">
                                 <label for="pass2">Conferma password</label>
                             </div>
-                            <input type="password" name="pass2" id="pass2">
+                            <div class="formInput">
+                                <input type="password" name="pass2" id="pass2">
+                            </div>
                         </div>
-                        <div>
-                            <button type="submit">Invio</button>
+                        
+                        <div class="formDiv">
+                            <button type="submit">Aggiorna</button>
                         </div>
                     </form>
                 </div>
