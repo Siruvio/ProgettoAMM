@@ -215,7 +215,7 @@ a:hover {
 }
 
 /* Stile profilo */
-#elements h1 {
+#elements h1#mainText {
     margin-top: 0px;
     margin-left: 15px;
 }
@@ -247,4 +247,40 @@ a:hover {
 
 #formRegister .formInput {
     width: 285px;
+}
+
+/* Stile descrizione */
+div#mainText, #elements #summary, .divDomanda {
+    margin-left: 15px;
+}
+
+div#mainText h1 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+div#mainText p {
+    margin-bottom: 5px;
+}
+
+#summary h2 {
+    margin-bottom: 0px;
+}
+
+#summary ul {
+    margin-top: 0px;
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.divDomanda {
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.divDomanda h3, .divDomanda p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    padding-left: 10px;
 }
