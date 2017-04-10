@@ -69,9 +69,19 @@ a:hover {
 
 #navBar li {
     font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 11px;
     padding-left: 15px;
     padding-right: 15px;
     border-left: 2px solid #ffffff;
+}
+
+#navBar li#activePage {
+    background-color: #ffffff;
+}
+
+#navBar li#navNextActive {
+    border-left: 0px;
 }
 
 #navBar li:last-child {
@@ -96,7 +106,7 @@ a:hover {
     float: left;
     width: 15%;
     padding-left: 10px;
-    margin-top: 5px;
+    border-top: 2px solid #000000;
 }
 
 #sidebarLeft h2 {
@@ -115,6 +125,8 @@ a:hover {
 #pageContent {
     float: left;
     width: 84%;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
 }
 
 #elements {
@@ -283,4 +295,15 @@ div#mainText p {
     margin-bottom: 0px;
     padding-bottom: 5px;
     padding-left: 10px;
+}
+
+/* Adattamento a schermo */
+@media only screen and (max-width: 480px) {
+    
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    
+}
+@media only screen and (min-width: 1024px) {
+    
 }
