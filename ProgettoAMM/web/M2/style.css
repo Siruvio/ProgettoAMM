@@ -7,6 +7,11 @@
 body {
     background-color: #52c5e8;
     font: 19px "Avenir", "Arial", sans-serif;
+    margin: 0px;
+}
+
+ol, ul {
+    list-style-type: none;
 }
 
 h1 {
@@ -47,13 +52,6 @@ a:hover {
     border-bottom: 2px solid #000000;
 }
 
-#title h1 {
-    font-size: 25px;
-    padding-top: 10px;
-    padding-bottom: 11px;
-    border-right: 2px solid #000000;
-}
-
 #title h1, #navBar ol{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -68,37 +66,20 @@ a:hover {
     border-left: 0px;
 }
 
-#navBar li:last-child {
-    border-right: 2px solid #ffffff;
-}
-
-#logOutBox {
-    float: right;
-    margin-right: 20px;
-}
-
 /* Stile sidebar */
 #sidebarLeft {
     background-color: #00ff00;
-    float: left;
     border-right: 2px solid #000000;
 }
 
 #sidebarLeft ul {
     margin-top: 0px;
-    list-style-type: none;
 }
 
 /* Stile contenuto generico con sidebar */
-#pageContent {
-    float: left;
-    background-color: #ffffff;
-}
-
 #elements {
     background-color: #ffff00;
-    margin-left: 5px;
-    margin-top: 5px;
+    margin: 5px;
 }
 
 #elements p {
@@ -113,8 +94,120 @@ a:hover {
     }
 }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
+    /* Headbar */
     #title h1 {
         background-color: #00ff88;
+    }
+    
+    #headBar #title, #headBar #navBar {
+        display: inline-block;
+    }
+    
+    #headBar #title {
+        float: left;
+        width: 100%
+    }
+    
+    #headBar #navBar{
+        width: 65%;
+    }
+    
+    #headBar ol {
+        margin-left: 0px;
+        padding-left: 0px
+    }
+    
+    #headBar li {
+        border-bottom: 2px solid #ffffff;
+    }
+    
+    #headBar li:last-child {
+        border-bottom-width: 0px;
+    }
+    
+    #headBar #logOutBox {
+        float: right;
+        position: relative;
+        top: 10px;
+        margin: 10px;
+    }
+    
+    #logOutBox p {
+        text-align: center;
+        margin-top: 1px;
+        margin-bottom: 0px;
+    }
+    
+    /* Sidebar */
+    #sidebarLeft {
+        border-right-width: 0px;
+        border-bottom: 2px solid #000000;
+    }
+    
+    #sidebarLeft #searchBox {
+        display: none;
+    }
+    
+    #sidebarLeft #friendsList, #sidebarLeft #groupsList {
+        display: inline-block;
+        width: 30%;
+        margin-left: 10px;
+    }
+    
+    #sidebarLeft h2 {
+        margin: 0px;
+        font-size: 25px;
+    }
+    
+    /* Layout interni */
+    #pageLogin #elements { /* Pagine senza sidebar */
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    .post {
+        margin-bottom: 10px;
+    }
+    
+    .post .postPic {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+    }
+    
+    .post .postName {
+        position: relative;
+        bottom: 35px;
+        margin-left: 15px;
+    }
+    
+    .post p{
+        margin-left: 15px;
+        position: relative;
+        bottom: 15px;
+    }
+    
+    .postPhoto {
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+    
+    #formRegister {
+        margin-left: 10%;
+        width: 300px;
+    }
+
+    #formRegister .formDiv {
+        width: 500px;
+    }
+    
+    #formRegister .formLabel {
+        
+        width: 200px;
+    }
+
+    #formRegister .formInput {
+        width: 185px;
     }
 }
 @media only screen and (min-width: 1024px) {
@@ -124,6 +217,12 @@ a:hover {
        padding-left: 0px;
     }
     
+    #title h1 {
+        font-size: 25px;
+        padding-top: 10px;
+        padding-bottom: 11px;
+    }
+
     #navBar li {
         font-size: 25px;
         padding-top: 10px;
@@ -133,9 +232,13 @@ a:hover {
         border-left: 2px solid #ffffff;
     }
     
-    #title h1 {
+    #navBar li:last-child {
+        border-right: 2px solid #ffffff;
+    }
+
+    #title{
         background-color: #00ffff;
-        width: 210px;
+        width: 21%;
     }
     
     #logOutBox p {
@@ -144,10 +247,16 @@ a:hover {
         font-size: 18px;
         text-align: center;
     }
+    
+    #logOutBox {
+        float: right;
+        margin-right: 20px;
+    }
 
     /* Sidebar */
     #sidebarLeft {
-        width: 200px;
+        float: left;
+        width: 20%;
         padding-left: 10px;
     }
 
@@ -161,10 +270,60 @@ a:hover {
         padding-left: 20px;
     }
     
-    /* Stile contenuto generico senza sidebar */
-    #pageLogin #elements {
+    /* Stile contenuto generico */
+    #pageContent { /* Pagine con sidebar */
+        float: left;
+        width: 78.5%;
+    }
+    
+    #pageLogin #elements { /* Pagine senza sidebar */
         margin-left: 20%;
         margin-right: 20%;
+    }
+    
+    /* Specifiche delle pagine */
+    .post {
+        margin-bottom: 25px;
+    }
+    
+    .post .postPic {
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+    }
+    
+    .post .postName {
+        position: relative;
+        bottom: 45px;
+        margin-left: 15px;
+    }
+    
+    .post p{
+        margin-left: 15px;
+        position: relative;
+        bottom: 15px;
+    }
+    
+    .postPhoto {
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+    
+    #formRegister {
+        margin-left: 10%;
+        width: 600px;
+    }
+
+    #formRegister .formDiv {
+        width: 500px;
+    }
+    
+    #formRegister .formLabel {
+        width: 200px;
+    }
+
+    #formRegister .formInput {
+        width: 285px;
     }
 }
 
@@ -172,32 +331,15 @@ a:hover {
 .post {
     background-color: #ff00ff;
     border-radius: 15px;
-    margin-bottom: 25px;
 }
 
 .post .postPic {
-    width: 120px;
-    height: 120px;
     margin-top: 5px;
     margin-left: 10px;
-    border-radius: 20px;
 }
 
 .post .postName {
     display: inline-block;
-    position: relative;
-    bottom: 45px;
-    margin-left: 15px;
-}
-
-.post p{
-    margin-left: 15px;
-    position: relative;
-    bottom: 15px;
-}
-.postPhoto {
-    margin-left: 25px;
-    margin-bottom: 20px;
 }
 
 /* Stile login */
@@ -206,28 +348,14 @@ a:hover {
     margin-left: 15px;
 }
 
-#formLogin {
+#formRegister {
     background-color: #ff00ff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 400px;
     border: 2px solid #ffffff;
 }
 
-#formLogin .formDiv {
-    margin-left: 40px;
-    margin-bottom: 20px;
-    width: 300px;
-}
-
-.formDiv input, .formDiv button {
-    width: 100%
-}
-
-/* Stile login */
-#pageLogin h1, #pageLogin #formLogin {
-    margin-bottom: 25px;
-    margin-left: 15px;
+#formRegister .formDiv {
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 #formLogin {
@@ -254,33 +382,12 @@ a:hover {
     margin-left: 15px;
 }
 
-#formRegister {
-    background-color: #ff00ff;
-    margin-left: 10%;
-    border: 2px solid #ffffff;
-    width: 600px;
-}
-
-#formRegister .formDiv {
-    margin-bottom: 10px;
-    margin-left: 20px;
-    width: 500px;
-}
-
 #formRegister .formDiv:first-of-type {
     margin-top: 10px;
 }
 
 #formRegister .formLabel, #formRegister .formInput {
     display: inline-block;
-}
-
-#formRegister .formLabel {
-    width: 200px;
-}
-
-#formRegister .formInput {
-    width: 285px;
 }
 
 /* Stile descrizione */
