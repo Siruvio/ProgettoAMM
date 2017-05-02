@@ -11,65 +11,45 @@ package amm.nerdbook.Classi;
 
 public class Post {
     private int id;
-    private Utente user;
+    private int user;
     private String contenuto;
     private String urlFotoPost;
     
     public Post() {
         this.id = 0;
-        this.user = null;
+        this.user = 0;
         this.contenuto = "";
         this.urlFotoPost = "";
     }
     
-    /**
-    * @return the id
-    */
     public int getId() {
         return this.id;
     }
-    /**
-     * @param id the id to set
-     */
+
     public void setId(int id) {
         this.id = id;
     }
     
-    /**
-    * @return the user
-    */
-    public Utente getUser() {
+    public int getUser() {
         return this.user;
     }
-    /**
-     * @param usr the user to set
-     */
-    public void setUser(Utente usr) {
-        this.user = usr;
+
+    public void setUser(int num) {
+        this.user = num;
     }
     
-    /**
-    * @return the content
-    */
     public String getContent() {
         return this.contenuto;
     }
-    /**
-     * @param content the content to set
-     */
+
     public void setContent(String content) {
         this.contenuto = content;
     }
     
-    /**
-    * @return the photo
-    */
     public String getFoto() {
         return this.urlFotoPost;
     }
-    /**
-     * @param url the photo to set
-     */
+    
     public void setFoto(String url) {
         this.urlFotoPost = url;
     }
